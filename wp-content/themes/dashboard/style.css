@@ -1,0 +1,141 @@
+/*   
+Theme Name: Dashboard
+Description: SSO Dashboard for TNCreations
+Author: Kelly Parks
+Version: 1.0 alpha
+*/
+
+#wpadminbar #wp-admin-bar-manage_apps>.ab-item:before {
+    content: "\f524";
+    top: 2px;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background-color: #4166B0;
+}
+
+h1 {
+	margin: 1.5em 0 1.3em;
+	color: white;
+}
+
+.site-title {
+	text-transform: uppercase;
+}
+
+.wrapper {
+	width: 80%;
+	max-width: 55em;
+	margin: 5em auto 0 auto;
+}
+
+.apps-page-wrapper {
+	width: 90%;
+	margin: 5em auto 0 auto;
+	max-width: 90em;
+}
+
+.apps-wrapper {
+	padding: 2em 0 5em 0;
+	margin: 0 auto;
+	max-width: 90em;
+}
+
+.app-wrapper {
+	height: 350px;
+	
+}
+
+.tnc-logo {
+	display: block;
+	margin: 0 auto;
+}
+
+img {	
+	display: block;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+a {
+	display: block;
+}
+
+label {
+	color: white;
+	font-size: 2rem;
+}
+
+input[type="submit"] {
+	display: block;
+}
+
+figcaption {
+	text-align: center;
+}
+
+form {
+	margin: 0 auto;
+}
+
+.beta-notice {
+	color: rgba(255,255,255,0.5);
+	font-size: 4em;
+	font-style: italic;
+}
+
+
+.panel-group {
+	clear: both;
+}
+
+.parent {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (min-width: 29em) {
+	.app-wrapper {
+		width:47.5%;
+		float: left;
+	}
+	
+	.app-wrapper:nth-child(odd){
+	margin-right: 5%;
+	}
+}
+
+@media screen and (min-width: 51em) {
+form {
+	width: 90%;
+	max-width: 39em;
+}
+
+.app-wrapper {
+	width:30%;
+	display:inline-block;
+	}
+	
+	.app-wrapper:nth-child(odd){
+	margin-right: unset;
+	}
+	
+	.app-wrapper:nth-child(3n+2){
+	margin: 0 3.3%;
+	}
+
+
+	
+}
+
+@media screen and (min-width: 55em) {
+	.beta-notice {
+		margin-right: 10%;
+	}
+}
